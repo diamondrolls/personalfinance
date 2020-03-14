@@ -46,18 +46,31 @@ width: 520px;
        margin:0px;
        padding:0px;
        list-style: none;
-        
+        position:relative;
     }
+		   
 ul li {
-     
-    
-    background-color:d3d3d3;
-    line-height: 50px;
-    text-align:center;
+Position:relative;
+     width:100px; 
+	height:100px;
     font-size:20px;
     font-family: ariel;
-    
+    Text-align:center;
     }
+
+
+
+ul li ul li {
+    display: none;
+position:relative;
+}
+ul li:hover ul li {
+z-index:999;
+    display: block;
+Position:relative;
+Background-color:rgba(0,255,255,.7);
+}
+		   
 ul li a {
     text-decoration: none;
     color: red;
@@ -71,12 +84,7 @@ ul li a:hover {
     float:none;
     background-color:aqua; 
     }
-ul li ul li {
-    display: block;
-}
-ul li:hover ul li {
-    display: block;
-}
+
 		   
 .homepage{
 	borderstyle:outset;
